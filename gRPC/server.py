@@ -11,9 +11,9 @@ class ProductService(mensaje_pb2_grpc.ProductServiceServicer):
    def AddProduct(self, request, context):
         print(request)
         if str(request) == "":
-          mensaje = os.listdir()
+          mensaje = os.listdir('/home/ubuntu/reto2/')
         else:
-           contenido = os.listdir()
+           contenido = os.listdir('/home/ubuntu/reto2/')
            pregunta = str(request)[15:-2]
            if pregunta.rstrip() in contenido:
                mensaje = [f"El archivo '{pregunta}' si está en el directorio"]
