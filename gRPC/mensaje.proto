@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Product{
+    string code_request = 1;
+}
+
+message TransactionResponse{
+    repeated string code = 1;
+}
+
+service ProductService{
+    rpc AddProduct(Product) returns (TransactionResponse) {}
+}
