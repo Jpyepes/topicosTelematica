@@ -324,7 +324,7 @@ tmpfs                        198M  4.0K  198M   1% /run/user/1000
 <host_ip>:/home              25G  5.9G   19G  24% /nfs/home
 ```
 Si se logra observar las dos ultimas líneas es porque ya esta lista la configuración. 
-## License
+## Bibliografía
 
 [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-22-04)  
 [GitHub Repo](https://github.com/st0263eafit/st0263-231/tree/main/docker-nginx-wordpress-ssl-letsencrypt)
