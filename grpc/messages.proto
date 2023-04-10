@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service messageService {
+  rpc message (instructionRequest) returns (messageResponse) {}
+  rpc sync (instructionRequest) returns (messageResponse) {}
+}
+
+message instructionRequest {
+  string query = 1;
+  bytes estado = 2;
+  bool respuesta = 3;
+}
+
+message messageResponse {
+  repeated string results = 1;
+}
