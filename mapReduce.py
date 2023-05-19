@@ -96,8 +96,88 @@ class MRdiaNegro(MRJob):
         resultado = f'En el dia {listaKeys[listaValues.index(min(listaValues))]} la mayor cantidad de acciones tuvo el menor valor de accion'
         item = '' 
         yield resultado, item
+
+#--------------------------------------------------------------------------------
+
+class MRpeliculasUsuario(MRJob):
+
+    def mapper(self, _, line):
+#       for w in line.decode('utf-8', 'ignore').split():
+        #User,Movie,Rating,Genre,Date
+        User,Movie,Rating,Genre,Date=line.split(",")
+        yield User,[Movie,Rating]
+
+    def reducer(self, key, values):
+        temp = list(values)
+        listaRating = []
+        for item in temp:
+            listaRating.append(float(item[1]))
+        promedio = statistics.mean(listaRating)
+        respuesta = f'Cantidad de peliculas vistas {len(temp)}, promedio de calificacion {promedio}'
+        yield key, respuesta
+
+class MRmasPeliculasVistas(MRJob):
+
+    def mapper(self, _, line):
+#       for w in line.decode('utf-8', 'ignore').split():
+        #User,Movie,Rating,Genre,Date
+        User,Movie,Rating,Genre,Date=line.split(",")
+        yield 0,[Date,Movie]
+
+    def reducer(self, key, values):
+        temp = list(values)
+        valores = {}
+        for valor in temp:
+            fecha = valor[0]
+            pelicula = int(valor[1])
+            if fecha in valores:
+                valores[fecha].append(pelicula)
+            else:
+                valores[fecha] = [pelicula]
+        listaKeys = []
+        listaValues = []
+        resultado = ''
+        listaKeys = list(valores.keys())
+        listaValues = list(valores.values())
+        for i in range(len(listaValues)):
+            listaValues[i] = len(listaValues[i]) 
+        respuesta = f'El dia en que mas se vieron peliculas fue el {listaKeys[listaValues.index(max(listaValues))]}'
+        yield '*', respuesta
+
+class MRmenosPeliculasVistas(MRJob):
+
+    def mapper(self, _, line):
+#       for w in line.decode('utf-8', 'ignore').split():
+        #User,Movie,Rating,Genre,Date
+        User,Movie,Rating,Genre,Date=line.split(",")
+        yield 0,[Date,Movie]
+
+    def reducer(self, key, values):
+        temp = list(values)
+        valores = {}
+        for valor in temp:
+            fecha = valor[0]
+            pelicula = int(valor[1])
+            if fecha in valores:
+                valores[fecha].append(pelicula)
+            else:
+                valores[fecha] = [pelicula]
+        listaKeys = []
+        listaValues = []
+        resultado = ''
+        listaKeys = list(valores.keys())
+        listaValues = list(valores.values())
+        for i in range(len(listaValues)):
+            listaValues[i] = sum(listaValues[i]) 
+        respuesta = f'El dia en que menos se vieron peliculas fue el {listaKeys[listaValues.index(min(listaValues))]}'
+        yield '*', respuesta
 if __name__ == '__main__':
+    #MRpromedioSalarioSE.run()
     #MRpromedioSalarioE.run()
+    #MRsectorEconomicoE.run()
     #MRaccion.run()
     #MRaccionMayorEstable.run()
-    MRdiaNegro.run()
+    #MRdiaNegro.run()
+    #MRpeliculasUsuario.run()
+    #MRmasPeliculasVistas.run()
+    MRmenosPeliculasVistas.run()
