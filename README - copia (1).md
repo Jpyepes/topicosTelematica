@@ -1,48 +1,37 @@
-# St0263 - Reto 6.1
+# St0263 - Reto 6.2
 # Juan Pablo Yepes García - jpyepesg@eafit.edu.co
 # Edwin Nelson Montoya Munera - emontoyag@eafit.edu.co
-## Pasos a seguir: 
-## Parte 1 
+## Evidencias Google Colab (No se ejecutaron los querys en Jupyter ya que no tenía creditos en AWS)
 1.    
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/dac9adeb-098a-457f-850f-db5a51415dcb)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/2d00ccb1-ad4a-411f-a07c-c797bd0b6fe5)  
 2.  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/37474dfd-7a42-4215-964b-9b6e941ebf87)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/0f1d361a-d0cd-4b29-b83c-7ecacc05ae27)  
 3.   
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/3d7f1dd0-6eb8-4572-9e70-0cbc4ea30ab4)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/45b7142c-58d8-42f8-b5d6-cb3c59345991)  
 4.   
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/4bf38387-447c-4905-ab16-85f25c2302c5)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/66000e60-c48b-4e50-aabf-83781619334c)  
 5.  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/113c4fb0-6ccc-4f39-8e23-951f230d1aaa)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/83dd6140-82a3-4468-8bc0-88d77224bbc6)  
 6.   
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/5f884256-e4dd-4481-af9d-c3503a8978c6)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/6d21aab3-e246-4ceb-ab17-ddd156ad0471)  
 7.  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/a35fa3ce-a52b-4134-8c0a-ba777495a688)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/7cc93d54-de38-4342-938f-e279c16ae449)  
 8.   
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/f96551f2-df79-4d61-8623-c329f22265d7)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/45da9a9b-dfe6-4d19-9c9d-0b687d0666f6)  
 9.  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/d858c59b-ecec-4d13-b9e2-280d212aefbd)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/3d42f179-654d-4859-a88f-b77bf1241951)  
 10.  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/0fdc9b21-87e0-469a-b9f3-db57431e0d7c)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/f32e8ea2-dc0e-424e-b0fe-f3414fbcbd7d) 
 11.  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/1ae684c4-d18d-466e-81d6-c791aaf85fbc)  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/20c15d9a-797b-42fd-8e27-4c86b2fc61f3)  
 12.  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/9234782a-8e92-445a-8241-fa1f28aae5f9)  
-## Parte 2: Queries en Athena
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/3992f8e7-9085-4f3b-b8b6-e6027683ff02)  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/2b345fae-681c-4804-aefb-26ddc7e124c4)
-## Queries en Hue
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/8b941494-30de-4057-8eca-5772c57bd3f7)  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/013787dc-8750-430a-8807-be71768db579)
-## Queries en JupyterHub
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/6cfee9ca-26da-4c8f-a27f-aae7dd5e9339)  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/b42bcf77-116b-446a-9786-91ce027b8e82)
-## Parte 3
-1.  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/9a12d807-6ebf-4e1c-a0b4-c327096b051d)  
-2. Hubo un error con el S3 ‘st0263datasets’  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/89656a93-06fe-41fc-b5ec-bb52949e114d)  
-3.  
-![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/59f5ed97-a4fb-44de-9407-dd9bb4179471)
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/40753017-9228-4218-aca8-bc9b72835d86)  
+13.  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/b1e4ead7-2a95-4d0d-b7f3-29e3ba2a48b1)  
+14.  
+![image](https://github.com/Jpyepes/topicosTelematica/assets/61372991/75a3ffee-c084-4905-bc68-7b2702926ebb)
+
+
 
 
 
